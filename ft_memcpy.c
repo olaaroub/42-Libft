@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 12:38:50 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/11 17:44:02 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/14 11:29:51 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,13 @@ typedef struct
 
 void    *ft_memcpy(void *dest, const void *src, size_t n)
 {
-    size_t i;
+    size_t      i;
+    char        *char_dest;
+    const char  *char_src;
 
+    char_src = (const char *) src;
+    char_dest = (char *) dest;
     i = 0;
-    char *char_dest = (char *) dest;
-    const char *char_src = (const char *) src;
     if((char_dest == NULL) && (char_src == NULL))
         return NULL;
     while(i < n)
