@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 21:24:14 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/14 21:56:12 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/15 20:55:49 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,6 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
 size_t	ft_strlen(const char *str);
+char    *ft_substr(char const *s, unsigned int start,  size_t len);
 
 #endif
