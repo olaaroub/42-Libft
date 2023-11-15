@@ -18,8 +18,8 @@ int	ft_strncmp(char *str1, char *str2, unsigned int n)
 	unsigned char	*s1;
 	unsigned char	*s2;
 
-	s1 = (unsigned char *) str1;
-	s2 = (unsigned char *) str2;
+	s1 = (unsigned char *)str1;
+	s2 = (unsigned char *)str2;
 	i = 0;
 	if ((!s1 && !s2) || n == 0)
 		return (0);
