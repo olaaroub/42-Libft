@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/11/15 11:35:23 by olaaroub          #+#    #+#              #
+#    Updated: 2023/11/15 11:35:24 by olaaroub         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 CC = gcc
 FLAGS = -Wall -Wextra -Werror
 SRCS = ft_tolower.c ft_toupper.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_memset.c ft_bzero.c

@@ -6,42 +6,39 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/10 21:02:29 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/11 18:30:00 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/15 11:30:13 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 #include <stdio.h>
+#include <string.h>
 
-char    *ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
+	int		i;
+	char	*buff;
 
-    int i;
-    char    *buff;
-
-
-    buff = (char *)s;
-    if (c == 0)
-    {
-        return (buff + ft_strlen(buff));
-    }
-    i = ft_strlen(buff);
-    while (i >= 0)
-    {
-        if(buff[i] == (char)c)
-            return (buff + i);
-        i--;
-    }
-    return NULL;
+	buff = (char *)s;
+	if (c == 0)
+	{
+		return (buff + ft_strlen(buff));
+	}
+	i = ft_strlen(buff);
+	while (i >= 0)
+	{
+		if (buff[i] == (char)c)
+			return (buff + i);
+		i--;
+	}
+	return (NULL);
 }
 
+// int main()
+// {
+//     char    string [] = "koussama @laarou.";
+//     char    s = '.';
+//     printf("%s\n", strrchr(string, s) );
+//     printf("%s\n", ft_strrchr(string, s) );
 
-int main()
-{
-    char    string [] = "koussama @laarou.";
-    char    s = '.';
-    printf("%s\n", strrchr(string, s) );
-    printf("%s\n", ft_strrchr(string, s) );
-
-}
+// }

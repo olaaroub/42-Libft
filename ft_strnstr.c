@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 15:53:17 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/10 21:00:43 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/15 12:42:58 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,13 +35,13 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	return (NULL);
 }
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int	main(void)
-{
-	char big[] = "oussama laaroubi is a student.";
-	char little[] = "s";
-	printf("%s\n", ft_strnstr(big, little, 30));
-	printf("%s\n", strnstr(big, little, 30));
-}
+// int	main(void)
+// {
+// 	char big[] = "oussama laaroubi is a student.";
+// 	char little[] = "s";
+// 	printf("%s\n", ft_strnstr(big, little, 30));
+// 	printf("%s\n", strnstr(big, little, 30));
+// }

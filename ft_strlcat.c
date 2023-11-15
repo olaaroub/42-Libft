@@ -6,12 +6,11 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:59:27 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/10 16:24:25 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/15 15:07:08 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size)
 {
@@ -19,18 +18,20 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	size_t	j;
 	size_t	slenght;
 	size_t	dlenght;
-	char	*buff;
 
-	buff = (char *)src;
-	dlenght = strlen(dest);
-	slenght = strlen(src);
-	i = 0;
+	dlenght = ft_strlen(dest);
+	slenght = ft_strlen(src);
 	j = 0;
+	i = 0;
+	if (!dest && size == 0)
+		return (0);
+	if (size <= dlenght)
+		return (size + slenght);
 	while (dest[i])
 	{
 		i++;
 	}
-	while (src[j] && j < size - dlenght - 1)
+	while (src[j] && i < size - 1)
 	{
 		dest[i] = src[j];
 		i++;
@@ -41,10 +42,13 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 }
 
 // #include <stdio.h>
+// #include <string.h>
 
 // int	main(void)
 // {
 // 	char dest[] = "oussama";
-// 	const char src[] = "laaroubi";
-// 	printf("%zu\n", ft_strlcat(dest, src, 6));
+// 	char src[] = "laaroubi";
+// 	printf("%zu\n", ft_strlcat(dest, src, 7));
+// 	printf("%zu\n", strlcat(dest, src, 7));
+
 // }

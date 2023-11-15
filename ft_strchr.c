@@ -5,38 +5,36 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/10 18:15:14 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/10 20:56:09 by olaaroub         ###   ########.fr       */
+/*   Created: 2023/11/15 13:06:08 by olaaroub          #+#    #+#             */
+/*   Updated: 2023/11/15 13:11:41 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
-char    *ft_strchr(const char *str, int c)
+char	*ft_strchr(const char *str, int c)
 {
-    size_t i;
-    char    *buff;
+	size_t	i;
+	char	*buff;
 
-
-    buff = (char *)str;
-    i = 0;
-    while (buff[i] || i <= strlen(buff))
-    {
-        if(buff[i] == (char)c)
-            return (buff+i);
-        i++;
-    }
-    return NULL;
+	buff = (char *)str;
+	i = 0;
+	while (i <= ft_strlen(buff))
+	{
+		if (buff[i] == (char)c)
+			return (buff + i);
+		i++;
+	}
+	return (NULL);
 }
+// #include <stdio.h>
+// #include <string.h>
 
+// int main()
+// {
+//     char    string [] = "oussama @laaroubi.";
+//     char    s = '\0';
+//     printf("%s\n", strchr(string, s) );
+//     printf("%s\n", ft_strchr(string, s) );
 
-int main()
-{
-    char    string [] = "oussama @laaroubi.";
-    char    s = 'u';
-    printf("%s\n", strchr(string, s) );
-    printf("%s\n", ft_strchr(string, s) );
-
-}
+// }

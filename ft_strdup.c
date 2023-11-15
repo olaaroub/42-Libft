@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 21:03:18 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/14 21:04:53 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/15 11:29:57 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strdup(const char *s1)
 {
 	int		i;
 	char	*nv;
-	size_t  len;
+	size_t	len;
 
 	i = 0;
 	len = ft_strlen(s1);
@@ -32,14 +32,14 @@ char	*ft_strdup(const char *s1)
 	return (nv);
 }
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
 
-int main()
-{
-    char name[] = "a";
+// int main()
+// {
+//     char name[] = "a";
 
-    printf("%s\n", ft_strdup(name));
-    printf("%s\n", strdup(name));
+//     printf("%s\n", ft_strdup(name));
+//     printf("%s\n", strdup(name));
 
-}
+// }

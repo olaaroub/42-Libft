@@ -6,13 +6,13 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 19:11:17 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/14 19:18:11 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/15 11:28:34 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
 	int	res;
 	int	sign;
@@ -23,11 +23,11 @@ int ft_atoi(const char *str)
 	i = 0;
 	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
 		i++;
-	if(str[i] == '-' || str[i] == '+')
+	if (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '-')
 			sign *= -1;
-        i++;
+		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
@@ -37,11 +37,11 @@ int ft_atoi(const char *str)
 	return (res * sign);
 }
 
-#include <stdio.h>
-#include <stdlib.h>
-int main()
-{
-    printf("%d\n", ft_atoi("-123"));
-    printf("%d\n", atoi("-123"));
+// #include <stdio.h>
+// #include <stdlib.h>
+// int main()
+// {
+//     printf("%d\n", ft_atoi("-123"));
+//     printf("%d\n", atoi("-123"));
 
-}
+// }
