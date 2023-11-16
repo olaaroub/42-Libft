@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 19:07:36 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/15 11:29:00 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/16 16:05:23 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,6 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 
 	char_s1 = (unsigned char *)str1;
 	char_s2 = (unsigned char *)str2;
-	if (!char_s1 || !char_s2)
-		return (0);
 	while (n--)
 	{
 		if (*char_s1 != *char_s2)

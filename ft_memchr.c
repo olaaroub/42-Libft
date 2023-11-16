@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 11:31:08 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/15 11:32:01 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/16 16:02:18 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	p = (unsigned char *)s;
 	found_char = NULL;
 	i = 0;
-	while ((s != NULL) && (n--))
+	while (n--)
 	{
 		if (p[i] != (unsigned char)c)
 			i++;

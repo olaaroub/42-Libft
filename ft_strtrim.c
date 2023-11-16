@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 22:59:28 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/16 15:09:35 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/16 15:42:10 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,30 +20,28 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	j;
 
 	i = 0;
-	if (!s1)
-		return (NULL);
-	if (!set)
-		return ((char *)s1);
-	while (s1[i] && ft_strchr(set, s1[i]))
+	if (s1 != 0 && set != 0)
 	{
-		i++;
+		j = ft_strlen(s1);
+		if (j == 0)
+			return (ft_strdup(""));
+		while (s1[i] && ft_strchr(set, s1[i]))
+			i++;
+		while (s1[j - 1] && j > i && ft_strchr(set, s1[j - 1]))
+			j--;
+		ptr = malloc(j - i + 1);
+		if (!ptr)
+			return (NULL);
+		buff = ptr;
+		ft_strlcpy(buff, s1 + i, j - i + 1);
+		return (ptr);
 	}
-	j = ft_strlen(s1);
-	while (s1[j - 1] && ft_strchr(set, s1[j - 1]))
-	{
-		j--;
-	}
-	ptr = malloc(j - i + 1);
-	if (!ptr)
-		return (NULL);
-	buff = ptr;
-	ft_strlcpy(buff, s1 + i, j - i + 1);
-	return (ptr);
+	return (NULL);
 }
 // #include <stdio.h>
 // int main()
 // {
-//     char name[] = "abbhhhMy name is oussama.hhhhah";
-//     char *p = ft_strtrim(name, "ab");
+//     char name[] = "             ";
+//     char *p = ft_strtrim(name, " ");
 //     printf("%s\n", p);
 // }
