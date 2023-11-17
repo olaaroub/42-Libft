@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 16:21:26 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/17 17:34:52 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/17 19:07:04 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*ptr;
 	unsigned int	i;
 
+	if(!s)
+		return NULL;
 	ptr = malloc(ft_strlen(s) + 1);
 	if (!ptr)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 21:34:59 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/16 22:54:08 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/17 18:31:25 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ char	*ft_itoa(int n)
 	char	*ptr;
 	int		nbr;
 	int		count;
-
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	sign = 1;

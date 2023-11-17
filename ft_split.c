@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 16:26:42 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/17 16:02:18 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/17 18:32:30 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,6 +85,8 @@ char	**ft_split(char const *s, char c)
 	char	**ptr;
 	char	*str;
 
+	if(!s)
+		return NULL;
 	str = (char *)s;
 	count = count_words(str, c);
 	ptr = (char **)malloc((count + 1) * sizeof(char *));

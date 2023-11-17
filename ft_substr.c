@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 15:15:41 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/15 21:17:46 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/17 18:28:52 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,8 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*ptr;
-
+	if(!s)
+		return NULL;
 	if (start >= ft_strlen(s))
 		return (ft_strdup("\0"));
 	if (len > ft_strlen(s) - start)
