@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 16:26:42 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/16 23:50:59 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/17 16:02:18 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,6 @@ static char	**ft_free(char **ptr, int k)
 	return (NULL);
 }
 
-static int	check_charset(char s, char c)
-{
-	if (s == c)
-		return (1);
-	return (0);
-}
-
 static int	count_words(char *str, char c)
 {
 	int	count;
@@ -40,12 +33,12 @@ static int	count_words(char *str, char c)
 	count = 0;
 	while (*str)
 	{
-		while (*str && check_charset(*str, c))
+		while (*str && *str == c)
 			str++;
-		if (*str && !check_charset(*str, c))
+		if (*str && *str != c)
 		{
 			count++;
-			while (*str && !check_charset(*str, c))
+			while (*str && *str != c)
 				str++;
 		}
 	}
@@ -54,7 +47,7 @@ static int	count_words(char *str, char c)
 
 static void	ft_copy(char *src, char *dest, char c)
 {
-	while (*src && !check_charset(*src, c))
+	while (*src && *src != c)
 	{
 		*dest = *src;
 		src++;
@@ -71,10 +64,10 @@ static char	**fill_strings(char *str, char **ptr, int count, char c)
 	k = -1;
 	while (++k < count && *str)
 	{
-		while (check_charset(*str, c) && *str)
+		while (*str == c && *str)
 			str++;
 		l = 0;
-		while (!check_charset(str[l], c) && str[l])
+		while (str[l] != c && str[l])
 			l++;
 		ptr[k] = (char *)malloc((l + 1) * sizeof(char));
 		if (!ptr[k])
@@ -85,6 +78,7 @@ static char	**fill_strings(char *str, char **ptr, int count, char c)
 	ptr[k] = 0;
 	return (ptr);
 }
+
 char	**ft_split(char const *s, char c)
 {
 	int		count;
@@ -101,13 +95,19 @@ char	**ft_split(char const *s, char c)
 }
 // #include <stdio.h>
 
-// int main()
+// int	main(void)
 // {
-//     char name[] = "oussama,laaroubi,kkk";
-//     char **ptr;
-//     ptr  = ft_split(name, ',');
-//     for(int i = 0; i < 3; i++)
-//     {
-//         printf("%s\n", ptr[i]);
-//     }
+// 	char name[] = "oussama,laaroubi,kkk";
+// 	char **ptr;
+// 	ptr = ft_split(name, ',');
+// 	for (int i = 0; i < 3; i++)
+// 	{
+// 		printf("%s\n", ptr[i]);
+// 	}
 // }
+// // // static int	check_charset(char s, char c)
+// // // {
+// // // 	if (s == c)
+// // // 		return (1);
+// // // 	return (0);
+// // // }
