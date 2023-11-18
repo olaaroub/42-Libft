@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 14:59:27 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/17 19:05:18 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/18 14:16:51 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 		return (ft_strlen(src));
 	dlenght = ft_strlen(dest);
 	slenght = ft_strlen(src);
-	j = 0;
-	i = 0;
 	if (size == 0 || size <= dlenght)
 		return (size + slenght);
+	j = 0;
+	i = 0;
 	while (dest[i])
 		i++;
 	while (src[j] && i < size - 1)
@@ -44,10 +44,10 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 
 // int    main(void)
 // {
-//     char dest[] = "oussama";
+//     char dest[15] = "oussama";
 //     char src[] = "laaroubi";
-//     ft_strlcat(dest, src, 12);
+//     printf("%zu\n", ft_strlcat(dest, src, 15));
+// //    printf("%zu\n", strlcat(dest, src, 15));
 //     printf("%s\n", dest);
-// //    printf("%zu\n", strlcat(dest, src, 12));
 
 // }

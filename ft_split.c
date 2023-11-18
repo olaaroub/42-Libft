@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 16:26:42 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/17 18:32:30 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/18 14:17:18 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,8 +85,8 @@ char	**ft_split(char const *s, char c)
 	char	**ptr;
 	char	*str;
 
-	if(!s)
-		return NULL;
+	if (!s)
+		return (NULL);
 	str = (char *)s;
 	count = count_words(str, c);
 	ptr = (char **)malloc((count + 1) * sizeof(char *));
@@ -101,7 +101,7 @@ char	**ft_split(char const *s, char c)
 // {
 // 	char name[] = "oussama,laaroubi,kkk";
 // 	char **ptr;
-// 	ptr = ft_split(name, ',');
+// 	ptr = ft_split('\0', ',');
 // 	for (int i = 0; i < 3; i++)
 // 	{
 // 		printf("%s\n", ptr[i]);

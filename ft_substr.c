@@ -15,8 +15,9 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*ptr;
-	if(!s)
-		return NULL;
+
+	if (!s)
+		return (NULL);
 	if (start >= ft_strlen(s))
 		return (ft_strdup("\0"));
 	if (len > ft_strlen(s) - start)
