@@ -1,39 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/19 15:01:38 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/19 15:51:05 by olaaroub         ###   ########.fr       */
+/*   Created: 2023/11/19 14:11:48 by olaaroub          #+#    #+#             */
+/*   Updated: 2023/11/19 19:53:05 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstadd_back(t_list **lst, t_list *new)
+t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*current;
+	t_list	*ptr;
 
-	if (lst)
+	ptr = lst;
+	while (ptr)
 	{
-		if (*lst)
-		{
-			current = *lst;
-			while (current)
-			{
-				if (current->next == NULL)
-				{
-					current->next = new;
-					break ;
-				}
-				current = current->next;
-			}
-		}
-		else
-			*lst = new;
+		if (ptr->next == NULL)
+			break ;
+		ptr = ptr->next;
 	}
+	return (ptr);
 }
 
 // int	main(void)
@@ -45,11 +35,11 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 // 	t_list *node4 = ft_lstnew((void *)5);
 // 	t_list *node5 = ft_lstnew((void *)6);
 
-// 	ft_lstadd_back(&head, node1);
-// 	ft_lstadd_back(&head, node2);
-// 	ft_lstadd_back(&head, node3);
-// 	ft_lstadd_back(&head, node4);
-// 	ft_lstadd_back(&head, node5);
+// 	ft_lstadd_front(&head, node1);
+// 	ft_lstadd_front(&head, node2);
+// 	ft_lstadd_front(&head, node3);
+// 	ft_lstadd_front(&head, node4);
+// 	ft_lstadd_front(&head, node5);
 
 // 	t_list *ptr;
 // 	ptr = head;
