@@ -6,7 +6,7 @@
 #    By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 11:35:23 by olaaroub          #+#    #+#              #
-#    Updated: 2023/11/18 22:40:40 by olaaroub         ###   ########.fr        #
+#    Updated: 2023/11/19 15:59:54 by olaaroub         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRCS += ft_substr.c ft_strjoin.c ft_strtrim.c ft_itoa.c ft_split.c ft_strmapi.c 
 SRCS += ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 OBJ = $(SRCS:.c=.o)
 
-B_SRCS = ft_lstnew.c ft_lstadd_front.c
+B_SRCS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c
 B_OBJ = $(B_SRCS:.c=.o)
 
 NAME = libft.a

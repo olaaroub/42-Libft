@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 22:59:28 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/16 15:42:10 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/19 15:23:12 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (NULL);
 }
+
 // #include <stdio.h>
 // int main()
 // {
