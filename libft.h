@@ -6,13 +6,14 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 21:24:14 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/19 21:22:10 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/20 14:42:08 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+# include <ctype.h>
 # include <fcntl.h>
 # include <stdio.h>
 # include <stdlib.h>
