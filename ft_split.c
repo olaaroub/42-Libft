@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 16:26:42 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/18 14:17:18 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/20 19:04:35 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,9 +99,9 @@ char	**ft_split(char const *s, char c)
 
 // int	main(void)
 // {
-// 	char name[] = "oussama,laaroubi,kkk";
+// 	char name[] = ",oussama,laaroubi,kkk,,";
 // 	char **ptr;
-// 	ptr = ft_split('\0', ',');
+// 	ptr = ft_split(name, ',');
 // 	for (int i = 0; i < 3; i++)
 // 	{
 // 		printf("%s\n", ptr[i]);

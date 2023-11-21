@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 15:15:41 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/17 18:28:52 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/20 20:08:51 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 // int main()
 // {
 //     char const insta_acc[] = "your insta acc is : @oussama_laar.";
-//     char *res = ft_substr(insta_acc, 100, 15);
+//     char *res = ft_substr(insta_acc, 21, 1500);
 //     printf("%s\n", res);
 // }
