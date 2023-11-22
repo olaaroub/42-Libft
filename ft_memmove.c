@@ -6,17 +6,11 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/11 18:38:45 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/20 20:47:00 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:31:45 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-// typedef struct
-// {
-// 	int	age;
-// 	int	logtime;
-// }		student;
 
 void	*ft_memmove(void *dest, const void *src, size_t len)
 {
@@ -46,27 +40,3 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 	}
 	return (dest);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main()
-// {
-//     char src[] = "helloThere is oussama.";
-//     // char dest[100];
-// //     student student1;
-// //     student1.age = 15;
-// //     student1.logtime = 126;
-// //     student student2;
-//     ft_memmove(src, src + 3, 7);
-//     ft_memcpy(src, src + 3, 7);
-
-//     printf("%s\n", dest );
-//     printf("%s\n", memmove(dest, src, ft_strlen(src) + 1 ));
-
-//     printf("%d\n", student1.age);
-//     printf("%d\n", student1.logtime);
-//     ft_memmove(&student2,&student1, sizeof(student));
-//     printf("%d\n", student2.age);
-//     printf("%d\n", student2.logtime);
-// }

@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 19:55:15 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/19 20:24:20 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 19:59:27 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
+	t_list	*tmp;
+
 	if (lst && f)
 	{
-		while (lst)
+		tmp = lst;
+		while (tmp)
 		{
-			f(lst->content);
-			lst = lst->next;
+			f(tmp->content);
+			tmp = tmp->next;
 		}
 	}
 }

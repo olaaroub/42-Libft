@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 13:06:08 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/15 13:11:41 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:30:41 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,14 +27,3 @@ char	*ft_strchr(const char *str, int c)
 	}
 	return (NULL);
 }
-// #include <stdio.h>
-// #include <string.h>
-
-// int main()
-// {
-//     char    string [] = "oussama @laaroubi.";
-//     char    s = '\0';
-//     printf("%s\n", strchr(string, s) );
-//     printf("%s\n", ft_strchr(string, s) );
-
-// }

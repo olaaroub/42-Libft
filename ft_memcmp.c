@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 19:07:36 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/16 16:05:23 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:31:54 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,14 +28,3 @@ int	ft_memcmp(const void *str1, const void *str2, size_t n)
 	}
 	return (0);
 }
-// #include <stdio.h>
-// #include <string.h>
-// int main()
-// {
-//     char s1[] = "ooussama";
-//     char s2[] = "oussama";
-
-//     printf("%d\n", ft_memcmp(s1, s2, 3));
-//     printf("%d\n", memcmp(s1, s2, 3));
-//     return (0);
-// }

@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 22:59:28 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/19 15:23:12 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:21:54 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	j;
 
 	i = 0;
-	if (s1 != 0 && set != 0)
+	if (s1 && set)
 	{
 		j = ft_strlen(s1);
 		if (j == 0)
@@ -38,11 +38,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	}
 	return (NULL);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-//     char name[] = "             ";
-//     char *p = ft_strtrim(name, " ");
-//     printf("%s\n", p);
-// }

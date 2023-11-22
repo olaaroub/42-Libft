@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 13:37:00 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/10 16:24:32 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:28:27 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,12 +37,3 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	}
 	return (lenght);
 }
-// #include <stdio.h>
-// #include <string.h>
-
-// int	main(void)
-// {
-// 	char dest[] = "ouss";
-// 	const char src[] = "hey";
-// 	printf("%zu\n", ft_strlcpy(dest, src, 2));
-// }

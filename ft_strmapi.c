@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 16:21:26 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/17 19:07:04 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:28:11 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*ptr;
 	unsigned int	i;
 
-	if (!s)
+	if (!s || !f)
 		return (NULL);
 	ptr = malloc(ft_strlen(s) + 1);
 	if (!ptr)
@@ -33,17 +33,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	ptr[i] = '\0';
 	return (ptr);
 }
-
-// #include <stdio.h>
-
-// static char   ft_to(unsigned int i, char c)
-// {
-//     return (char)ft_toupper(c);
-// }
-
-// int main()
-// {
-//     const char  name[] = "oussama. ousss imaaddddddddddddd";
-//     char    *f = ft_strmapi(name, ft_to);
-//     printf("%s\n", f);
-// }

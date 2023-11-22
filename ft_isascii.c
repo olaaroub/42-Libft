@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 12:19:44 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/10 16:24:09 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:34:17 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,3 @@ int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	printf("%d\n", ft_isascii(' '));
-// }

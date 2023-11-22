@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 11:31:08 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/16 16:02:18 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:32:03 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,32 +33,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (found_char);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-// #include <stdlib.h>
-
-// int main()
-// {
-//     // char data[] = "my instagram acc is : @oussama_laar.";
-
-//     // printf("your instagram acc is : %s \n", ft_memchr(data, '@',
-//		ft_strlen(data)));
-//     char data[] = { 10, 20, 30, 40, 50, 60, 70, 80, 90, 100 };
-//     const unsigned int size = 10;
-
-//     // On recherche une valeur inhéxistante :
-//     void * found = ft_memchr( data, 57, size );
-//     printf( "57 is %s\n", ( found != NULL ? "found" : "not found" ) );
-
-//     // On recherche une valeur existante :
-//     found = ft_memchr( data, 50, size );
-//     printf( "50 is %s\n", ( found != NULL ? "found" : "not found" ) );
-//     if ( found != NULL ) {
-//         printf( "La valeur à la position calculée est %d\n",
-//	*((char *) found) );
-//     }
-//     printf("%d\n", memcmp("oussama", "oussama", 7));
-
-//     return (EXIT_SUCCESS);
-// }

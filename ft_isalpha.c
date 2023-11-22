@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:54:06 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/10 16:23:40 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:34:21 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,3 @@ int	ft_isalpha(int c)
 		return (1);
 	return (0);
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	printf("%d\n", ft_isalpha('a'));
-// }

@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 21:03:18 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/15 11:29:57 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:28:50 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,3 @@ char	*ft_strdup(const char *s1)
 	nv[i] = '\0';
 	return (nv);
 }
-
-// #include <stdio.h>
-// #include <string.h>
-
-// int main()
-// {
-//     char name[] = "a";
-
-//     printf("%s\n", ft_strdup(name));
-//     printf("%s\n", strdup(name));
-
-// }

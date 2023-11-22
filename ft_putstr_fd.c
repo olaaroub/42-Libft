@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 17:24:06 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/18 18:07:19 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:29:45 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
-	if (!s)
+	if (!s || fd < 0)
 		return ;
 	while (*s)
 	{
@@ -22,9 +22,3 @@ void	ft_putstr_fd(char *s, int fd)
 		s++;
 	}
 }
-
-// int main()
-// {
-//     char s[] = "ousssama laaroubi is ;;;";
-//     ft_putstr_fd(s);
-// }

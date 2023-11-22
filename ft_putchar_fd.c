@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 14:20:45 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/18 17:05:38 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:31:20 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,8 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	write(fd, &c, 1);
+	if (fd >= 0)
+	{
+		write(fd, &c, 1);
+	}
 }
-
-// int main()
-// {
-//     int i = 0;
-//     while (i <= 47)
-//     {
-//         ft_putchar_fd(i, 2);
-//         i+
-//     }
-// }

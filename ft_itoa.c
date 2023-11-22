@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 21:34:59 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/18 17:10:06 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:34:05 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,14 +39,12 @@ static int	count_digits(int nbr)
 
 char	*ft_itoa(int n)
 {
-	int		sign;
 	char	*ptr;
 	int		nbr;
 	int		count;
 
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
-	sign = 1;
 	count = count_digits(n);
 	ptr = malloc(sizeof(char) * count + 1);
 	if (!ptr)
@@ -56,7 +54,6 @@ char	*ft_itoa(int n)
 		ptr[0] = '0';
 	if (n < 0)
 	{
-		sign *= -1;
 		nbr = n * -1;
 		ptr[0] = '-';
 	}
@@ -65,13 +62,3 @@ char	*ft_itoa(int n)
 	ptr = ft_print_chars(ptr, nbr, count);
 	return (ptr);
 }
-
-// #include <stdio.h>
-
-// int main()
-// {
-//     int c = -2147483647;
-//     char    *ptr;
-//     ptr = ft_itoa(c);
-//     printf("%s\n", ptr);
-// }

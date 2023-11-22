@@ -6,7 +6,7 @@
 #    By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/15 11:35:23 by olaaroub          #+#    #+#              #
-#    Updated: 2023/11/20 16:54:16 by olaaroub         ###   ########.fr        #
+#    Updated: 2023/11/22 21:54:16 by olaaroub         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,14 +33,13 @@ $(NAME): $(OBJ)
 	@$(AR) $(NAME) $(OBJ)
 
 $(OBJ):$(SRCS)
-	$(CC) $(CFLAGS) -c $(SRCS)
+	@$(CC) $(CFLAGS) -c $(SRCS)
 
 bonus : $(B_OBJ)
 
 $(B_OBJ):$(B_SRCS)
 	@$(CC) $(CFLAGS) -c $(B_SRCS)
 	@$(AR) $(NAME) $(B_OBJ)
-
 
 clean:
 	@$(RM) $(OBJ) $(B_OBJ)

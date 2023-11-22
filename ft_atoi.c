@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 19:11:17 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/15 11:28:34 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:34:37 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,12 +36,3 @@ int	ft_atoi(const char *str)
 	}
 	return (res * sign);
 }
-
-// #include <stdio.h>
-// #include <stdlib.h>
-// int main()
-// {
-//     printf("%d\n", ft_atoi("-123"));
-//     printf("%d\n", atoi("-123"));
-
-// }

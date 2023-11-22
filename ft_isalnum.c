@@ -6,7 +6,7 @@
 /*   By: olaaroub <olaaroub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 12:13:22 by olaaroub          #+#    #+#             */
-/*   Updated: 2023/11/10 16:23:28 by olaaroub         ###   ########.fr       */
+/*   Updated: 2023/11/22 21:34:25 by olaaroub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,3 @@ int	ft_isalnum(int c)
 	return ((c >= '0' && c <= '9') || (c >= 65 && c <= 90) || (c >= 97
 			&& c <= 122));
 }
-
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	printf("%d\n", ft_isalnum('-'));
-// }
